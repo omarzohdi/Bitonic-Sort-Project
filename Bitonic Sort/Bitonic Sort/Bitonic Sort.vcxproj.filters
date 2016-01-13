@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="OpenCL">
+      <UniqueIdentifier>{42ab8061-f936-49d3-9372-a4f44df858bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL\Headers">
+      <UniqueIdentifier>{5c0b4988-ef61-43a9-a8f5-d7f26c1781d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenCL\Lib">
+      <UniqueIdentifier>{d588ccc6-75dd-4c9e-8409-acc86d87533a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BitonicSort">
+      <UniqueIdentifier>{a729fab0-e39f-4644-887f-f2ae563d08ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructures">
+      <UniqueIdentifier>{2e9b6be1-174c-404d-a34b-6647f5e645a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kernels">
+      <UniqueIdentifier>{1fd29677-8910-4a28-bb62-bccbf6657542}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\OpenCL\include\CL\cl.h">
+      <Filter>OpenCL\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenCL\include\CL\cl_d3d9_ext.h">
+      <Filter>OpenCL\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenCL\include\CL\cl_d3d10.h">
+      <Filter>OpenCL\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenCL\include\CL\cl_d3d10_ext.h">
+      <Filter>OpenCL\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenCL\include\CL\cl_d3d11_ext.h">
+      <Filter>OpenCL\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenCL\include\CL\cl_ext.h">
+      <Filter>OpenCL\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenCL\include\CL\cl_gl.h">
+      <Filter>OpenCL\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenCL\include\CL\cl_gl_ext.h">
+      <Filter>OpenCL\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenCL\include\CL\cl_platform.h">
+      <Filter>OpenCL\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OpenCL\include\opencl.h">
+      <Filter>OpenCL\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BitonicSortGPU.h">
+      <Filter>BitonicSort</Filter>
+    </ClInclude>
+    <ClInclude Include="BitonicSortCPU.h">
+      <Filter>BitonicSort</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenCL.h">
+      <Filter>DataStructures</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\OpenCL\lib\OpenCL.lib">
+      <Filter>OpenCL\Lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BitonicSortGPU.cpp">
+      <Filter>BitonicSort</Filter>
+    </ClCompile>
+    <ClCompile Include="BitonicSortCPU.cpp">
+      <Filter>BitonicSort</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenCL.cpp">
+      <Filter>DataStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BitonicSortKernel.cl">
+      <Filter>Kernels</Filter>
+    </None>
+  </ItemGroup>
+</Project>
